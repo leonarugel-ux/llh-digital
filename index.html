@@ -5,22 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LLH Digital Systems</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0b0f1a;
+  font-family: 'Orbitron', sans-serif;
+  background: #050816;
   color: white;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.7);
   backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -29,35 +33,34 @@ nav {
 }
 
 .logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-
-.logo span {
-  font-size: 20px;
-  font-weight: bold;
+  height: 55px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00c6ff;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(90deg,#00c6ff,#0072ff);
+  padding: 100px 20px;
+  background: linear-gradient(120deg,#00c6ff,#0072ff);
 }
 
 .hero img {
-  width: 180px;
+  width: 200px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .hero p {
@@ -71,11 +74,16 @@ nav a {
   background: black;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* PRODUCTOS */
-.container {
-  padding: 50px;
+.btn:hover {
+  background: #00c6ff;
+}
+
+/* SECCIONES */
+.section {
+  padding: 60px 40px;
 }
 
 .grid {
@@ -85,7 +93,7 @@ nav a {
 }
 
 .card {
-  background: #111a2e;
+  background: #0f172a;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
@@ -93,8 +101,8 @@ nav a {
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00c6ff;
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00c6ff;
 }
 
 .card img {
@@ -106,19 +114,17 @@ nav a {
 footer {
   background: black;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
 <div class="logo">
-<img src="logo.png" alt="logo">
-<span>LLH Digital Systems</span>
+<img src="logo.png" onerror="this.src='https://via.placeholder.com/200x80?text=LLH+LOGO';">
 </div>
 
 <div>
@@ -131,68 +137,59 @@ footer {
 
 <!-- HERO -->
 <section class="hero">
-<img src="logo.png">
+<img src="logo.png" onerror="this.src='https://via.placeholder.com/200x80?text=LLH+LOGO';">
 
 <h1>Tecnología Avanzada, Soluciones Digitales</h1>
 <p>Construyendo el mañana, hoy: el futuro está aquí</p>
 
-<a href="#productos">
-<button class="btn">Ver Productos</button>
-</a>
-
-<a href="https://wa.me/519XXXXXXXX">
-<button class="btn">WhatsApp</button>
-</a>
+<a href="#productos"><button class="btn">Ver Productos</button></a>
+<a href="https://wa.me/519XXXXXXXX"><button class="btn">WhatsApp</button></a>
 </section>
 
 <!-- PRODUCTOS -->
-<section class="container" id="productos">
+<section class="section" id="productos">
 <h2>💻 Productos</h2>
 
 <div class="grid">
-
 <div class="card">
 <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
 <h3>Laptops</h3>
-<p>Equipos modernos de alto rendimiento</p>
+<p>Alto rendimiento</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
 <h3>Componentes</h3>
-<p>Procesadores, RAM, SSD</p>
+<p>Hardware de calidad</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45">
 <h3>Periféricos</h3>
-<p>Teclados, mouse, accesorios</p>
+<p>Accesorios modernos</p>
 </div>
-
 </div>
 </section>
 
 <!-- SERVICIOS -->
-<section class="container" id="servicios">
+<section class="section" id="servicios">
 <h2>🛠 Servicios</h2>
 
 <div class="grid">
-
 <div class="card">
 <h3>Servicio Técnico</h3>
-<p>Reparación y mantenimiento</p>
+<p>Reparación profesional</p>
 </div>
 
 <div class="card">
 <h3>Software</h3>
-<p>Instalación profesional</p>
+<p>Instalación segura</p>
 </div>
 
 <div class="card">
 <h3>Optimización</h3>
-<p>Mejora el rendimiento</p>
+<p>Rendimiento máximo</p>
 </div>
-
 </div>
 </section>
 
@@ -205,4 +202,3 @@ footer {
 
 </body>
 </html>
-
