@@ -9,169 +9,67 @@
 body {
   margin:0;
   font-family: Arial;
-  background:#f5f5f5;
 }
 
 /* HEADER */
-.topbar {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 20px;
-  background:white;
-}
-
-.logo img {
-  height:50px;
-}
-
-.search {
-  width:40%;
-  padding:10px;
-}
-
-.actions {
-  font-weight:bold;
-}
-
-/* MENU */
-.menu {
+header {
   background:#0a5cff;
   color:white;
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  padding:10px;
-}
-
-/* HERO */
-.hero {
-  background:#e9eefc;
-  padding:40px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.hero img {
-  width:300px;
-}
-
-.hero-text h1 {
-  color:#0a5cff;
-}
-
-/* PRODUCTOS */
-.products {
-  padding:40px;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card {
-  background:white;
   padding:15px;
-  border-radius:10px;
   text-align:center;
-  box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-.card img {
-  width:100%;
+/* GRID */
+.grid-container {
+  display:grid;
+  grid-template-columns: 200px 1fr;
+  height:100vh;
 }
 
-.btn {
-  background:#0a5cff;
-  color:white;
-  padding:10px;
-  border:none;
-  cursor:pointer;
+.sidebar {
+  background:#f4f4f4;
+  padding:20px;
+}
+
+.content {
+  padding:20px;
 }
 
 /* FOOTER */
 footer {
-  background:#0a5cff;
+  background:black;
   color:white;
   text-align:center;
-  padding:20px;
+  padding:10px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="topbar">
-<div class="logo">
-<img src="logo.png">
+<header>
+<h1>LLH Digital Systems</h1>
+<p>Tecnología Avanzada, Soluciones Digitales</p>
+</header>
+
+<div class="grid-container">
+
+<div class="sidebar">
+<h3>Menú</h3>
+<p>Laptops</p>
+<p>Computadoras</p>
+<p>Impresoras</p>
 </div>
 
-<input class="search" placeholder="Buscar productos...">
-
-<div class="actions">
-📲 981 309 331 🛒
-</div>
-</div>
-
-<!-- MENU -->
-<div class="menu">
-<span>Celulares</span>
-<span>Laptops</span>
-<span>Computadoras</span>
-<span>Impresoras</span>
-<span>Sistemas</span>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-<div class="hero-text">
-<h1>Tecnología Avanzada, Soluciones Digitales</h1>
+<div class="content">
+<h2>Bienvenido</h2>
 <p>Construyendo el mañana, hoy: el futuro está aquí</p>
-<button class="btn">Comprar ahora</button>
-</div>
-
-<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
-</div>
-
-<!-- PRODUCTOS -->
-<div class="products">
-<h2>🔥 Ofertas</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
-<h3>Laptop Asus</h3>
-<p>S/ 2,499</p>
-<button class="btn">Añadir al carrito</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
-<h3>Impresora Epson</h3>
-<p>S/ 619</p>
-<button class="btn">Añadir al carrito</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45">
-<h3>Monitor</h3>
-<p>S/ 899</p>
-<button class="btn">Añadir al carrito</button>
 </div>
 
 </div>
-</div>
 
-<!-- FOOTER -->
 <footer>
-LLH Digital Systems  
-📍 Ayacucho - Perú  
-📲 WhatsApp: 966626462  
+Ayacucho - Perú
 </footer>
 
 </body>
