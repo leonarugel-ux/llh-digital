@@ -6,59 +6,58 @@
 <title>LLH Digital Systems</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial;
-}
-
-/* HEADER */
-header {
-  background:#0a5cff;
-  color:white;
-  padding:15px;
-  text-align:center;
-}
-
-/* GRID */
+/* Estilo básico */
 .grid-container {
-  display:grid;
+  display: grid;
   grid-template-columns: 200px 1fr;
-  height:100vh;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 1 / 3;
+  background: #0a5cff;
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
 .sidebar {
-  background:#f4f4f4;
-  padding:20px;
+  grid-row: 2 / 3;
+  background: #f4f4f4;
+  padding: 20px;
 }
 
 .content {
-  padding:20px;
+  grid-row: 2 / 3;
+  padding: 20px;
 }
 
-/* FOOTER */
-footer {
-  background:black;
-  color:white;
-  text-align:center;
-  padding:10px;
+.footer {
+  grid-column: 1 / 3;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
+<div class="grid-container">
+
+<div class="header">
 <h1>LLH Digital Systems</h1>
 <p>Tecnología Avanzada, Soluciones Digitales</p>
-</header>
-
-<div class="grid-container">
+</div>
 
 <div class="sidebar">
 <h3>Menú</h3>
-<p>Laptops</p>
-<p>Computadoras</p>
-<p>Impresoras</p>
+<p>💻 Laptops</p>
+<p>🖥 Computadoras</p>
+<p>🖨 Impresoras</p>
 </div>
 
 <div class="content">
@@ -66,11 +65,11 @@ footer {
 <p>Construyendo el mañana, hoy: el futuro está aquí</p>
 </div>
 
+<div class="footer">
+📍 Ayacucho - Perú
 </div>
 
-<footer>
-Ayacucho - Perú
-</footer>
+</div>
 
 </body>
 </html>
